@@ -1,10 +1,10 @@
 function showLoader() {
-  $(".loading").fadeIn();
+  $(".loading").fadeIn(1000);
   $("body").addClass("no-scroll"); // يمنع التمرير
 }
 
 function hideLoader() {
-  $(".loading").fadeOut();
+  $(".loading").fadeOut(1000);
   $("body").removeClass("no-scroll"); // يرجّع التمرير
 }
 async function getMeals() {
