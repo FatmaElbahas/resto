@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/icons/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/media.css" />
+</head>
+<body class="p-5 bg-black">
+
+<div class="container min-vh-100 d-flex flex-column justify-content-center align-items-center">
+  <form class="w-100">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <input type="text" id="userName" class="form-control" placeholder="Enter Your Name">
+        <p class="error d-none text-danger">Name Must Start With Capital Letter Followed By 3 Characters or More</p>
+      </div>
+      <div class="col-md-6 mb-4">
+        <input type="email" id="userEmail" class="form-control" placeholder="Enter Your Email">
+        <p class="error d-none text-danger">Please enter a valid email address</p>
+      </div>
+      <div class="col-md-6 mb-4">
+        <input type="tel" id="userPhone" class="form-control" placeholder="Enter Your Phone">
+        <p class="error d-none text-danger">Please enter a valid phone number (eg. 01012345678)</p>
+    </div>
+      <div class="col-md-6 mb-4">
+        <input type="number" id="userAge" class="form-control" placeholder="Enter Your Age">
+       <p class="error d-none text-danger">Please enter a valid age (18 or above)</p>
+    </div>
+      <div class="col-md-6 mb-4">
+        <input type="password" id="userPassword" class="form-control" placeholder="Enter Your Password">
+        <p class="error d-none text-danger">Password must be at least 8 characters with letters and numbers.</p>
+      </div>
+      <div class="col-md-6 mb-4">
+        <input type="password" id="rePassword" class="form-control" placeholder="Re-enter Your Password">
+       <p class="error d-none text-danger">Passwords must match.</p>
+    </div>
+    </div>
+
+    <p class="duplicateNameError text-danger d-none text-center">This Email already exists!</p>
+    <p class="datavalid text-success d-none text-center">Success</p>
+
+    <div class="col-md-12 text-center py-3">
+      <button id="signupBtn" class="btn btn-outline-danger">Submit</button>
+    </div>
+  </form>
+</div>
+
+<script src="./assets/js/jquery-3.7.1.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/validate.js"></script>
+
+
+</body>
+</html>
