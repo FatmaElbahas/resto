@@ -29,5 +29,14 @@ $(".close-menu").on("click", function () {
   $("#sidebar .nav-tab a").removeClass("show");
 });
 
-
+$("a").on("click",function (e) {
+    if ($(this).attr("href") === "#") {
+      e.preventDefault();
+    }
+    $("#sidebar").removeClass("show");
+    $("#content").removeClass("shifted");
+    $(".open-menu").removeClass("d-none");
+    $(".close-menu").addClass("d-none");
+    $("#sidebar .nav-tab a").removeClass("show");
+  });
 // 
